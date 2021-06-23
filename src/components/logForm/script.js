@@ -17,7 +17,7 @@ const initValues = {
 
 function Submit(values, { resetForm }) {
     resetForm();
-    alert(values);
+    alert(JSON.stringify(values));
 }
 
 function Render(condition) {
