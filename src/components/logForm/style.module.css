@@ -1,0 +1,126 @@
+.Container {
+    color: #666666!important;
+    width: 440px;
+}
+
+.Header {
+    font-size: 18px;
+    font-family: "Helvetica Neue";
+    margin-bottom: 34px;
+    padding: 0px 71.5px;
+}
+
+.Header span {
+    color: #2fa2c3;
+    font-weight: bold;
+    font-size: 41.36px;
+}
+
+.FormBody {
+    font-family: "Helvetica Neue";
+    height: 311px;
+    padding: 34px 71.5px;
+    border-radius: 5.51px;
+    fill: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(153, 153, 153, 0.33)
+}
+
+.FormBody input {
+    outline: none;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    height: 40px;
+    padding-left: 40px;
+    display: block;
+    width: 100%;
+    border: 1px solid rgb(153, 153, 153, 0.28);
+    border-radius: 5px;
+}
+
+.FormBody label {
+    position: relative;
+}
+
+.FormBody label:before {
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+.FormBody label:first-of-type::before {
+    content: url("./img/mail.png");
+}
+
+.FormBody label:last-of-type:before {
+    content: url("./img/lock.png");
+}
+
+.FormBody button {
+    letter-spacing: -0.18px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background: #36a2c1;
+    outline: none;
+    border: none;
+    font-family: "Helvetica Neue";
+    width: 95px;
+    height: 40px;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.FormBody button::after {
+    transition: all ease 0.7s;
+    transform: scaleX(0);
+    content: "";
+    background: #2d7f96;
+    border-radius: 3px;
+    position: absolute;
+    height: 40px;
+    width: 96.5px;
+    z-index: -1;
+    left: 1px;
+    top: 3px;
+}
+
+.FormBody button:hover::after {
+    transform: scaleX(1);
+}
+
+.FormBody p:last-of-type {
+    font-size: 12px;
+    padding: 0px 0px 12px 0px;
+}
+
+.FormBody p:last-of-type span {
+    color: #82c5d8;
+}
+
+.Error {
+    position: absolute;
+    top: 60%;
+    font-family: "Helvetica Neue";
+    color: rgb(228, 46, 46);
+    font-size: 13px;
+}
+
+.ResponseIcon {
+    position: absolute;
+    top: 21%;
+    right: -6%;
+}
+
+.OkBorder{
+    border-color: rgb(9, 161, 9);
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    font-weight: 300;
+    src: url("../fonts/helveticaneue-light.ttf");
+}
